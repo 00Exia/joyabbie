@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<monthly>
+
+
+	<event>
+		<id>1</id>
+		<name>New Year</name>
+		<startdate>2017-01-01</startdate>
+		<enddate>2017-01-01</enddate>
+		<starttime></starttime>
+		<endtime>2:00</endtime>
+		<color>#ffb128</color>
+		<url></url>
+	</event>
+
+	<event>
+		<id>2</id>
+		<name>Chinese Lunar New Year's Day</name>
+		<startdate>2017-01-28</startdate>
+		<enddate>2017-01-28</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#28cbff</color>
+		<url></url>
+	</event>
+
+	<event>
+		<id>3</id>
+		<name>Valentine's Day</name>
+		<startdate>2017-02-14</startdate>
+		<enddate>2017-02-14</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9cc370</color>
+		<url></url>
+	</event>
+
+	<event>
+		<id>4</id>
+		<name>Labor Day</name>
+		<startdate>2017-05-01</startdate>
+		<enddate>2017-05-01</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9f4b99</color>
+		<url></url>
+	</event>
+
+	<event>
+		<id>5</id>
+		<name>Independence Day</name>
+		<startdate>2017-06-12</startdate>
+		<enddate>2017-06-12</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9cc370</color>
+		<url></url>
+	</event>
+
+	<event>
+		<id>6</id>
+		<name>Deadline for Project in CS</name>
+		<startdate>2017-1-10</startdate>
+		<enddate>2017-1-10</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9f4b99</color>
+		<url></url>
+	</event>
+	
+	<event>
+		<id>7</id>
+		<name>National Heroes Day holiday</name>
+		<startdate>2017-8-28</startdate>
+		<enddate>2017-8-28</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9f4b99</color>
+		<url></url>
+	</event>
+	
+		<event>
+		<id>8</id>
+		<name>Special non-working Day</name>
+		<startdate>2017-10-31</startdate>
+		<enddate>2017-10-31</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9cc370</color>
+		<url></url>
+	</event>
+	
+		<event>
+		<id>9</id>
+		<name>All Saints' Day</name>
+		<startdate>2017-11-01</startdate>
+		<enddate>2017-11-01</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9f4b99</color>
+		<url></url>
+	</event>
+	
+		<event>
+		<id>10</id>
+		<name>All Soul's Day</name>
+		<startdate>2017-11-02</startdate>
+		<enddate>2017-11-02</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9cc370</color>
+		<url></url>
+	</event>
+	
+		<event>
+		<id>11</id>
+		<name>Bonifacio Day</name>
+		<startdate>2017-11-30</startdate>
+		<enddate>2017-11-30</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#28cbff</color>
+		<url></url>
+	</event>
+	
+		<event>
+		<id>12</id>
+		<name>Rizal Day</name>
+		<startdate>2017-12-30</startdate>
+		<enddate>2017-12-30</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9f4b99</color>
+		<url></url>
+	</event>
+	
+		<event>
+		<id>13</id>
+		<name>New Year's Eve</name>
+		<startdate>2017-12-31</startdate>
+		<enddate>2017-12-31</enddate>
+		<starttime></starttime>
+		<endtime></endtime>
+		<color>#9cc370</color>
+		<url></url>
+	</event>
+
+
+</monthly>

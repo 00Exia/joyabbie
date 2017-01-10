@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calendar - Abbie Joy Cruz Salvatierra - Start Bootstrap Theme</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta charset='utf-8'>	
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	* {box-sizing:border-box;}
+	ul {list-style-type: none;}
+	body {font-family: Verdana,sans-serif;}
+
+	.month {
+		padding: 70px 25px;
+		width: 100%;
+		background: #1abc9c;
+	}
+
+	.month ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	.month ul li {
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+
+	.month .prev {
+		float: left;
+		padding-top: 10px;
+	}
+
+	.month .next {
+		float: right;
+		padding-top: 10px;
+	}
+
+	.weekdays {
+		margin: 0;
+		padding: 10px 0;
+		background-color: #ddd;
+	}
+
+	.weekdays li {
+		display: inline-block;
+		width: 13.6%;
+		color: #666;
+		text-align: center;
+	}
+
+	.days {
+		padding: 10px 0;
+		background: #eee;
+		margin: 0;
+	}
+
+	.days li {
+		list-style-type: none;
+		display: inline-block;
+		width: 13.6%;
+		text-align: center;
+		margin-bottom: 5px;
+		font-size:12px;
+		color: #777;
+	}
+
+	.days li .active {
+		padding: 5px;
+		background: #1abc9c;
+		color: white !important
+	}
+
+	/* Add media queries for smaller screens */
+	@media screen and (max-width:720px) {
+		.weekdays li, .days li {width: 13.1%;}
+	}
+
+	@media screen and (max-width: 420px) {
+		.weekdays li, .days li {width: 12.5%;}
+		.days li .active {padding: 2px;}
+	}
+
+	@media screen and (max-width: 290px) {
+		.weekdays li, .days li {width: 12.2%;}
+	}
+	</style>
+	
+<!-- CSS ======================================================
+	<link rel="stylesheet" href="css/responsivetables.css">-->
+	<!-- Demo CSS (don't use) -->
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="css/monthly.css">	
+</head>
+
+<body>
+
+    <div class="brand">Abbie Joy Cruz Salvatierra</div>
+    <div class="address-bar">1116 Don Quijote St. Sampaloc, Manila | abbie.salvatierra@yahoo.com | University of manila</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="Home.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="Home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="MyResume.html">Resume</a>
+                    </li>
+					<li>
+                        <a href="Favorites.html">Favorites</a>
+                    </li>
+                    <li>
+                        <a href="Album.html">Album</a>
+                    </li>
+                    <li>
+                        <a href="Calendar.html">Calendar</a>
+                    </li>
+					<li>
+                        <a href="Lyrics.html">Lyrics</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+ <div class="row">
+    <div class="box">
+    <div class="col-lg-12">
+	<fieldset style="width:1000;">
+	
+<div class="page" align="center">
+		<h1>Calendar</h1>
+		<div style="width:100%; max-width:600px; display:inline-block;">
+			<div class="monthly" id="mycalendar"></div>
+		</div>
+		<br><br>
+</div>	
+	
+<!-- JS ======================================================= -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/monthly.js"></script>
+<script type="text/javascript">
+	$(window).load( function() {
+
+		$('#mycalendar').monthly({
+			mode: 'event',
+			//jsonUrl: 'events.json',
+			//dataType: 'json'
+			xmlUrl: 'events.xml'
+		});
+
+		$('#mycalendar2').monthly({
+			mode: 'picker',
+			target: '#mytarget',
+			setWidth: '250px',
+			startHidden: true,
+			showTrigger: '#mytarget',
+			stylePast: true,
+			disablePast: true
+		});
+
+	switch(window.location.protocol) {
+	case 'http:':
+	case 'https:':
+	// running on a server, should be good.
+	break;
+	case 'file:':
+	alert('Just a heads-up, events will not work when run locally.');
+	}
+
+	});
+</script>
+			
+			<style>
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			</style>
+		</div>
+	</div>
+</div>
+	 <br></br>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Thank You for Visiting my Web page</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
